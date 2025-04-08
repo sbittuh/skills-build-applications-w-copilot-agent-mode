@@ -82,6 +82,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'octofit_db',
+        'CLIENT': {
+            'host': 'mongodb://localhost:27017',
+            'username': 'octofit_user',
+            'password': 'securepassword',
+            'authSource': 'admin',
+        },
     }
 }
 
